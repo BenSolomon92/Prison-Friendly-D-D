@@ -8,7 +8,7 @@ import numpy
 
 """Generalized version of a diceroll
 n = what type of die is being used (e.g. 4-sided, 6-sided, 8-sided, etc.)
-number = How many times the die is being rolled!"""
+number = How many times the die is being rolled"""
 
 def n_sided(n, number):
     #Stores the rolls which the player receives
