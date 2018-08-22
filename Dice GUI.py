@@ -26,16 +26,11 @@ class App(QMainWindow):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
         
-        button = QPushButton('PyQt5 button', self)
+        button = QPushButton('Rolls a D20 One Time', self)
         button.setToolTip('This is an example button')
+        button.resize(150,32)
         button.move(100,70)
         button.clicked.connect(self.on_click)
-        
-        buttonReply = QMessageBox.question(self, 'PyQt5 message', "Do you like PyQt5?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
-        if buttonReply == QMessageBox.Yes:
-            print('Yes clicked.')
-        else:
-            print('No clicked.')
         
         self.statusBar().showMessage("DnD Dicerolls")
         self.show()
