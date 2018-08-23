@@ -6,6 +6,7 @@ Created on Wed Aug 15 13:56:59 2018
 """
 
 """Check"""
+import Diceroll
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QPushButton, QMessageBox
 from PyQt5.QtCore import pyqtSlot
@@ -37,7 +38,8 @@ class App(QMainWindow):
  
     @pyqtSlot()
     def on_click(self):
-        print('PyQt5 button click')
+        #print('PyQt5 button click')
+        print(Diceroll.n_sided(20,1))
 
     
 if __name__ == '__main__':
@@ -47,3 +49,4 @@ if __name__ == '__main__':
         app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec_())
+
