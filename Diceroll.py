@@ -20,4 +20,4 @@ def n_sided(n, number):
         print("For #", i+1, " diceroll you get ", x, '\n')
     #Gives a total number for the rolls
     sum_of_rolls = sum(rolls)
-    return sum_of_rolls
+    return print("The sum of the rolls is ", sum_of_rolls)
